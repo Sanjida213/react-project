@@ -1,4 +1,6 @@
-const team = [
+import Team from "./teamsData";
+
+const team: Team[] = [
   {
     id: 1,
     name: "Alima Miller",
