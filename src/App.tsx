@@ -22,24 +22,68 @@ const App = () => {
            
       <section className='ticket__employees-info'>
         <Employees employees={[team[1]]}/>
-        <Counter heading="Counter"/>
-      </section>   
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
 
-       <section className='ticket__employees-info'>
+      <section className='ticket__employees-info'>
         <Employees employees={[team[2]]}/>
-        <Counter heading="Counter"/>
-      </section>  
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
 
       <section className='ticket__employees-info'>
         <Employees employees={[team[3]]}/>
-        <Counter heading="Counter"/>
-      </section>  
-
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
 
       <section className='ticket__employees-info'>
         <Employees employees={[team[4]]}/>
-        <Counter heading="Counter"/>
-      </section>  
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
+
+      <section className='ticket__employees-info'>
+        <Employees employees={[team[5]]}/>
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
+
+      <section className='ticket__employees-info'>
+        <Employees employees={[team[6]]}/>
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
+
+      <section className='ticket__employees-info'>
+        <Employees employees={[team[7]]}/>
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
+
+      <section className='ticket__employees-info'>
+        <Employees employees={[team[8]]}/>
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
+
+      <section className='ticket__employees-info'>
+        <Employees employees={[team[9]]}/>
+        <div className='employee-tickets__counter'>
+          <Counter heading="Counter"/>
+        </div> 
+      </section>
+
+
     </div>
   
     </div>

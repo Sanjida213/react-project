@@ -5,25 +5,38 @@
   text-align: center;
 }
 
-.ticket-container{
-
-  .ticket__heading{
+.ticket-container {
+  .ticket__heading {
     padding: 30px;
     font-size: 50px;
   }
 
-  .employees-tickets{
+  .employees-tickets {
     display: flex;
-    // width: 200px;
-    gap: 30px;
+    flex-wrap: wrap; // allows the items to go on the next line
+    justify-content: space-between;
 
-    .ticket__employees-info{
+    .ticket__employees-info {
       display: block;
       outline: 2px solid black;
       padding: 10px;
       width: 110px;
+      margin-bottom: 30px;
     }
   }
 }
 
-  
+@media screen and (min-width: 768px) {
+  .ticket-container {
+
+    .employees-tickets {
+      gap: 10px;
+      font-size: 20px;
+      flex-wrap: wrap;
+
+      .ticket__employees-info {
+        width: 200px;
+      }
+    }
+  }
+}
