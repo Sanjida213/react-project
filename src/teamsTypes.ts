@@ -1,7 +1,7 @@
-type Team = {
+type Employee = {
   id: number;
   name: string;
   role: string
 }
 
-export default Team;
+export default Employee;

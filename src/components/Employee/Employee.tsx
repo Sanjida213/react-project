@@ -1,60 +1,41 @@
 import "./Employee.scss";
-import Team from "../../teamsTypes";
+import Employee from "../../teamsTypes";
+import Counter from "../Counter/Counter";
 
 type TeamProps = {
-  // id: Team[];
-  // names: Team[];
-  // roles: Team[];
-  employees: Team[];
+  employees: Employee[];
 };
 
-// const Employees = ({ names, roles }: TeamProps) => {
-//   // const teamsArr = [...team]
-//   // const teamsNames = teamsArr.map(team => {
-//   //   return (team.name)
-//   // })
 
-//   // const teamsRoles = teamsArr.map(team => {
-//   //   return (team.role)
-//   // })
-//   return (
-//     <div className="employee-content">
-//       {/* <p>{teamsNames}</p>
-//       <p>{teamsRoles}</p> */}
-//       {names.map((team) => {
-//         return (
-//           <p key={team.id} className="employee-content__names">
-//             {team.name}
-//           </p>
-//         );
-//       })}
-
-//       {roles.map((team) => {
-//         return <p className="employee-content__roles">{team.role}</p>;
-//       })}
-//     </div>
-//   );
-// };
 
 const Employees = ({ employees }: TeamProps) => {
-  return (
-    <div className="employee-content">
-      {employees.map((team) => {
-        return (
-          <p key={team.id} className="employee-content__names">
-            Name: {team.name}
-          </p>
-        );
-      })}
+  
+  // const employees = [...employee] /// maybe add employee here and then inside return map 
 
-      {employees.map((team) => {
-        return (
-          <p key={team.id} className="employee-content__roles">
-            Role: {team.role}
-          </p>
-        );
-      })}
+  return (
+    <div className="employee-container">
+       <div className="employee-card">
+       {employees.map((employee) => (
+        <div className="employee-info" key={employee.id}>
+          <div>
+          <p className="employee-content__names">
+           Name: {employee.name}
+         </p>
+       
+         <p className="employee-content__roles">
+           Role: {employee.role}
+         </p>
+        </div>
+
+          <Counter heading="Counter"/>
+         
+        </div>
+        ))};
+       </div>
+       
     </div>
   );
 };
 export default Employees;
+
+

@@ -1,11 +1,20 @@
 
-.employee-content{
-  display: block;
-  padding-bottom: 10px;
+.employee-container{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  // padding-bottom: 10px;
+   
+  // .employee-card {
+  //   display: flex;
+  // }
 
-  .employee-content__names,
-  .employee-content__roles{
-    text-align: start;
-    padding-bottom: 7px;
+
+  .employee-info{
+    margin-bottom: 20px;
   }
+
 }
+

@@ -1,6 +1,6 @@
-import Team from "./teamsTypes";
+import Employee from "./teamsTypes";
 
-const team: Team[] = [
+const team: Employee[] = [
   {
     id: 1,
     name: "Alima Miller",

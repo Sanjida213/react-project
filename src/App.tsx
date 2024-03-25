@@ -3,9 +3,16 @@ import Employees from './components/Employee/Employee';
 import team from './team';
 import Counter from './components/Counter/Counter';
 
-
+// we want to put the counter component inside the employee component and then
+// instead of team[0] we want to map over it so it gets each team employee. we can do this in apps.tsx
 const App = () => {
   
+// const employees = team.map(employee => (
+//   <div key={employee.id} className='employee'>
+//     <p>Name: {employee.name}</p>
+//     <p>Role: {employee.role}</p>
+//   </div>
+// ));
 
   return (
     <div className='ticket-container'>
@@ -13,76 +20,12 @@ const App = () => {
     
     <div className='employees-tickets'>
       
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[0]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-           
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[1]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
+      <section >
+       <div className='ticket__employees-info'>
+       <Employees employees={team}/>
 
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[2]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
+       </div>
       </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[3]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[4]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[5]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[6]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[7]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[8]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
-      <section className='ticket__employees-info'>
-        <Employees employees={[team[9]]}/>
-        <div className='employee-tickets__counter'>
-          <Counter heading="Counter"/>
-        </div> 
-      </section>
-
 
     </div>
   
