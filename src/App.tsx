@@ -8,11 +8,10 @@ const App = () => {
 
   return (
     <div className='ticket-container'>
-      
+
       <h1 className='ticket__heading'>Ticket Tracker</h1>
     
     <div className='ticket__employees'>
-      
       <section>
        <div className='ticket__employees-info'>
        <Employees employees={team}/>

@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 import "./Employee.scss";
 import Employee from "../../teamsTypes";
 import Counter from "../Counter/Counter";
@@ -22,13 +22,15 @@ const Employees = ({ employees }: TeamProps) => {
   return (
     <div className="employee-container">
 
-      <input
-        type="text"
-        placeholder="Search by name..."
-        value={searchValue}
-        onChange={handleInput}
-      />
-
+      <div className="employee__name-input">
+        <input
+          type="text"
+          placeholder="Search by name..."
+          value={searchValue}
+          onChange={handleInput}
+        />
+      </div>
+      
        {filteredName.map((employee) => (
       <div className="employee-info" key={employee.id}>
           

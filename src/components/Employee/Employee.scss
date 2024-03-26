@@ -1,20 +1,27 @@
 
 .employee-container{
   display: flex;
+  flex-direction: row;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
-    
+  .employee__name-input{
+    display: block;
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px; 
+  }
+
   .employee-info {
     outline: 2px solid black;
     padding: 10px;
-    width: 200px; // Adjust as needed
+    width: 100%;
     margin-bottom: 20px;
 
     .employee__name-role{
-      font-size: 20px;
+      font-size: 22px;
       margin-bottom: 50px;
 
       .employee-content__names{
@@ -22,7 +29,24 @@
       }
     }
   }
-
-
 }
 
+@media screen and (min-width: 768px) {
+  
+  .employee-container{
+
+    .employee-info {
+      width: calc(100%/3);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .employee-container{
+
+    .employee-info {
+      width: calc(100%/6);
+    }
+  }
+}
