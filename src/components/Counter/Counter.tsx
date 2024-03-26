@@ -22,15 +22,19 @@ const Counter = ({heading} : CounterProps) => {
     <div className="counter">
       <h1 className="counter__heading">{heading}</h1>
       <p className="counter__number">{[counter]}</p>
-      <button className="counter__decrement" aria-label="Navigate left"
+
+      <div className="counter__buttons">
+        <button className="counter__decrement" aria-label="Navigate left"
         onClick={handleDecrement}> 
         -
-      </button>
+        </button>
+        
+        <button className="counter__increment" aria-label="Navigate right"
+          onClick={handleIncrement}> 
+          +
+        </button>
+      </div>
       
-      <button className="counter__increment" aria-label="Navigate right"
-        onClick={handleIncrement}> 
-        +
-      </button>
     </div>
   )
 }

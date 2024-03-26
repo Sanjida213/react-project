@@ -1,23 +1,33 @@
+
 .counter {
   padding: 40px;
   outline: 2px solid black;
-  
+  width: 100%;
+  background-color: rgb(121, 191, 214);
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+
   .counter__heading {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
     font-size: 25px;
+    margin-bottom: 10px; 
   }
 
-  .counter__number{
-    padding: 10px;
+  .counter__number {
     font-size: 30px;
+    margin-bottom: 20px; 
   }
 
-  button{
+  .counter__buttons {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%; 
+  }
+
+  .counter__decrement,
+  .counter__increment {
     font-size: 25px;
     height: 30px;
-    width: 22px; 
+    width: 30px;
   }
-
 }

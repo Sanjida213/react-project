@@ -8,7 +8,6 @@ type TeamProps = {
 };
 
 
-
 const Employees = ({ employees }: TeamProps) => {
   const [searchValue, setSearchValue] = useState<string>("");
 
@@ -31,6 +30,7 @@ const Employees = ({ employees }: TeamProps) => {
         />
       </div>
       
+      
        {filteredName.map((employee) => (
       <div className="employee-info" key={employee.id}>
           
@@ -42,7 +42,7 @@ const Employees = ({ employees }: TeamProps) => {
            Role: {employee.role}
          </p>
         </div>
-
+          
         <Counter heading="Counter"/>
          
       </div>

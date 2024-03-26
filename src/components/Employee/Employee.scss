@@ -1,24 +1,30 @@
 
 .employee-container{
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 
   .employee__name-input{
     display: block;
     width: 100%; 
     padding: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    font-size: 25px;
   }
 
   .employee-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     outline: 2px solid black;
     padding: 10px;
-    width: 100%;
+    min-width: 200px; 
+    width: calc(33.33% - 20px);
+    flex: 0.5 1 auto;
     margin-bottom: 20px;
+    background-color: lightblue;
+    // overflow: auto;
 
     .employee__name-role{
       font-size: 22px;
@@ -46,7 +52,10 @@
   .employee-container{
 
     .employee-info {
+      min-width: unset;
       width: calc(100%/6);
     }
   }
 }
+
+
