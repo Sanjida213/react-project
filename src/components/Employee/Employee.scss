@@ -1,11 +1,12 @@
 
-.employee-container{
+.employee{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 
-  .employee__name-input{
+
+  &__name-input{
     display: block;
     width: 100%; 
     padding: 10px;
@@ -13,7 +14,7 @@
     font-size: 25px;
   }
 
-  .employee-info {
+  &__info {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -24,13 +25,12 @@
     flex: 0.5 1 auto;
     margin-bottom: 20px;
     background-color: lightblue;
-    // overflow: auto;
 
     .employee__name-role{
       font-size: 22px;
       margin-bottom: 50px;
 
-      .employee-content__names{
+      .employee__names{
         margin-bottom: 10px;
       }
     }
@@ -39,21 +39,22 @@
 
 @media screen and (min-width: 768px) {
   
-  .employee-container{
+  .employee{
+    padding: 20px;
 
-    .employee-info {
-      width: calc(100%/3);
+    &__info {
+      width: calc(20% - 20px);
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
   
-  .employee-container{
+  .employee{
 
-    .employee-info {
+    &__info {
       min-width: unset;
-      width: calc(100%/6);
+      width: calc(20% - 20px);
     }
   }
 }

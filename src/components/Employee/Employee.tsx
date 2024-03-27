@@ -16,10 +16,11 @@ const Employees = ({ employees }: TeamProps) => {
     setSearchValue(input)
   };
 
+
   const filteredName = employees.filter((employee) => employee.name.toLowerCase().includes(searchValue))
   
   return (
-    <div className="employee-container">
+    <div className="employee">
 
       <div className="employee__name-input">
         <input
@@ -30,15 +31,14 @@ const Employees = ({ employees }: TeamProps) => {
         />
       </div>
       
-      
        {filteredName.map((employee) => (
-      <div className="employee-info" key={employee.id}>
+      <div className="employee__info" key={employee.id}>
           
         <div className="employee__name-role">
-          <p className="employee-content__names">
+          <p className="employee__names">
            Name: {employee.name}
          </p>
-         <p className="employee-content__roles">
+         <p className="employee__roles">
            Role: {employee.role}
          </p>
         </div>

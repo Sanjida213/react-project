@@ -8,24 +8,24 @@
   flex-direction: column; 
   align-items: center; 
 
-  .counter__heading {
-    font-size: 25px;
+  &__heading {
+    font-size: 30px;
     margin-bottom: 10px; 
   }
 
-  .counter__number {
-    font-size: 30px;
+  &__number {
+    font-size: 35px;
     margin-bottom: 20px; 
   }
 
-  .counter__buttons {
+  &__buttons {
     display: flex;
     justify-content: space-between; 
     width: 100%; 
   }
 
-  .counter__decrement,
-  .counter__increment {
+  &__decrement,
+  &__increment {
     font-size: 25px;
     height: 30px;
     width: 30px;
